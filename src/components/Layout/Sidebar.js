@@ -2,7 +2,6 @@ import logo200Image from '../../assets/img/logo/logo_200.png';
 import sidebarBgImage from '../../assets/img/sidebar/sidebar-4.jpg';
 import SourceLink from '../../components/SourceLink';
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
 import {
   MdAccountCircle,
   MdArrowDropDownCircle,
@@ -38,8 +37,7 @@ import {
 import bn from '../../utils/bemnames';
 
 const sidebarBackground = {
-  // backgroundImage: `url("${sidebarBgImage}")`,
-  backgroundColor: '#11669F',
+  backgroundImage: `url("${sidebarBgImage}")`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
 };
@@ -122,7 +120,7 @@ class Sidebar extends React.Component {
                 alt=""
               />
               <span className="text-white">
-                Reduction <FaGithub />
+                ERP
               </span>
             </SourceLink>
           </Navbar>

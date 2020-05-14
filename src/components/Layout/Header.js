@@ -75,14 +75,17 @@ class Header extends React.Component {
     document.querySelector('.cr-sidebar').classList.toggle('cr-sidebar--open');
   };
 
+  
+
   render() {
     const { isNotificationConfirmed } = this.state;
 
     return (
       <Navbar light expand className={bem.b('bg-white')}>
-        <Nav navbar className="mr-2">
-          <Button outline onClick={this.handleSidebarControlButton}>
-            <MdClearAll size={25} />
+
+        <Nav navbar  className="mr-2">
+          <Button color="primary" outline onClick={this.handleSidebarControlButton}>
+            <MdClearAll  size={25} />
           </Button>
         </Nav>
         <Nav navbar>
@@ -95,13 +98,13 @@ class Header extends React.Component {
               {isNotificationConfirmed ? (
                 <MdNotificationsNone
                   size={25}
-                  className="text-secondary can-click"
+                  className="text-primary can-click"
                   onClick={this.toggleNotificationPopover}
                 />
               ) : (
                 <MdNotificationsActiveWithBadge
                   size={25}
-                  className="text-secondary can-click animated swing infinite"
+                  className="text-primary can-click animated swing infinite"
                   onClick={this.toggleNotificationPopover}
                 />
               )}
