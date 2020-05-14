@@ -38,7 +38,8 @@ import {
 import bn from '../../utils/bemnames';
 
 const sidebarBackground = {
-  backgroundImage: `url("${sidebarBgImage}")`,
+  // backgroundImage: `url("${sidebarBgImage}")`,
+  backgroundColor: '#11669F',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
 };
